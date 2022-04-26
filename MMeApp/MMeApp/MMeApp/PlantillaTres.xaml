@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MMeApp.PlantillaTres"
+             NavigationPage.HasNavigationBar="false"
+             Visual="Material">
+    
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="tela.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#FA58F4" Opacity="0.8"/>
+
+
+            <Grid>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="medidaTres.png" 
+                       Grid.ColumnSpan="5"
+                       Grid.RowSpan="9"
+                       Grid.Row="0" Grid.Column="0"
+                       Margin="5,0,0,0"/>
+
+                <!-- Primer campo de medidas  -->
+                <Entry BackgroundColor="#0070C0" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="0" Grid.Column="5" 
+               Placeholder="Ancho de espalda" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="AEspalda"/>
+
+                <Entry BackgroundColor="#FFC000" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="2" Grid.Column="5" 
+               Placeholder="Talle espalda" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="TEspalda"/>
+
+                <Entry BackgroundColor="#00B050" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="4" Grid.Column="5" 
+               Placeholder="Largo de brazo" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="LBrazo"/>
+
+                <Entry BackgroundColor="#EA34D4" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="6" Grid.Column="5" 
+               Placeholder="Largo de cadera" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="LCadera"/>
+
+                <Entry BackgroundColor="#FF0000" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="8" Grid.Column="5" 
+               Placeholder="Largo de rodilla" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="LRodilla"/>
+
+
+                <!-- Boton siguiente -->
+
+                <Button BackgroundColor="white" Grid.ColumnSpan="3" Grid.Row="10" Grid.Column="5" 
+                Text="Next" TextColor="#FA58F4" BorderRadius="8" FontAttributes="Bold" Margin="0,5,5,5"
+                        Clicked="Btn_next"/>
+
+                <!-- Boton volver -->
+                <Button BackgroundColor="white" Grid.ColumnSpan="3" Grid.Row="10" Grid.Column="0" 
+                Text="Back" TextColor="#FA58F4" BorderRadius="8" FontAttributes="Bold" Margin="5,5,0,5"
+                        Clicked="Btn_back"/>
+
+            </Grid>
+
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

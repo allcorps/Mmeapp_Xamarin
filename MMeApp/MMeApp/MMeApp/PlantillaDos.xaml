@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MMeApp.PlantillaDos"
+             NavigationPage.HasNavigationBar="false"
+             Visual="Material">
+
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="tela.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#FA58F4" Opacity="0.8"/>
+
+
+
+            <Grid>
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    <ColumnDefinition  Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="medidaDos.png" 
+                       Grid.ColumnSpan="5"
+                       Grid.RowSpan="8"
+                       Grid.Row="0" Grid.Column="0"
+                       Margin="0,5,0,0"/>
+
+                <!-- Primer campo de medidas  -->
+                <Entry BackgroundColor="#7030A0" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="0" Grid.Column="5" 
+               Placeholder="Ancho de hombro" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="AHombro"/>
+
+                <Entry BackgroundColor="#FFC000" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="2" Grid.Column="5" 
+               Placeholder="Contorno de cuello" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="CCuello"/>
+
+                <Entry BackgroundColor="#00B050" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="4" Grid.Column="5" 
+               Placeholder="Contorno de brazo" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="CBrazo"/>
+
+                <Entry BackgroundColor="#C55A11" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="6" Grid.Column="5" 
+               Placeholder="Contorno de puño" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="CPuno"/>
+
+                <Entry BackgroundColor="#0070c0" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="8" Grid.Column="5" 
+               Placeholder="Largo de tiro" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="LTiro"/>
+
+                <Entry BackgroundColor="#FF0000" Grid.ColumnSpan="3" Grid.RowSpan="2" Grid.Row="8" Grid.Column="1" 
+               Placeholder="L. falda/pantalon" PlaceholderColor="White" Keyboard="Numeric" HorizontalTextAlignment="Center"
+               TextColor="White" FontAttributes="Bold" Margin="0,5,5,0" x:Name="Lfp"/>
+
+                <!-- Boton siguiente -->
+
+                <Button BackgroundColor="white" Grid.ColumnSpan="3" Grid.Row="10" Grid.Column="5" 
+                Text="Next" TextColor="#FA58F4" BorderRadius="8" FontAttributes="Bold" Margin="0,5,5,5"
+                        Clicked="Btn_next"/>
+
+                <!-- Boton volver -->
+                <Button BackgroundColor="white" Grid.ColumnSpan="3" Grid.Row="10" Grid.Column="0" 
+                Text="Back" TextColor="#FA58F4" BorderRadius="8" FontAttributes="Bold" Margin="5,5,0,5"
+                        Clicked="Btn_back"/>
+
+            </Grid>
+
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

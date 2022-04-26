@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MMeApp.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             Visual="Material">
+
+    <ContentPage.Content>
+        
+        <Grid>
+
+            <Image Source="Botones.jpg"
+                   Aspect="AspectFill"/>
+
+            <BoxView Color="#FA58F4" 
+                     Opacity="0.8"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="MMeIcon.png" 
+                       WidthRequest="100"
+                       HeightRequest="180"
+                       Margin="0,50,0,120"/>
+
+                <StackLayout Grid.Row="1" Padding="10,20">
+                    
+                    <Button Text="Nuevo"
+                            BackgroundColor="White"
+                            BorderRadius="20"
+                            TextColor="#FA58F4"
+                            Margin="0,20"
+                            Clicked="Btn_template"/>
+                    <!-- En este caso llamara a la plantilla en blanco-->
+
+
+                    <Button Text="Buscar"
+                            BackgroundColor="White"
+                            BorderRadius="20"
+                            TextColor="#FA58F4"
+                            Clicked="Btn_search"
+                            />
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" 
+                             HorizontalOptions="Center" 
+                             Margin="0,0,0,50">
+
+                    <Label Text="My Measurements"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+
+                </StackLayout>
+                
+            </Grid>
+
+        </Grid>
+    
+    </ContentPage.Content>
+    
+</ContentPage>
